@@ -77,7 +77,7 @@ executing terraform, and setup of all required variables in configuration files.
 
   - Edit `new_environmet/main.tf, backend.tf, `. Set `environment` variable as environment name,
      
-2. Create DNS for env in your DNS provider panel (Route53) and point dns to new server IP. Uncoment installing packages commands in ec2 module. Update certbot command for new hostname in ec2 module "certbot --nginx -d new-env.zookeep.com --non-interactive --agree-tos -m support@hccr.com". This will create ssl certificate, renewal cronjob and install it in nginx.
+2. Create DNS for env in your DNS provider panel (Route53) and point dns to new server IP. Uncoment installing packages commands in ec2 module. Update certbot command for new hostname in ec2 module "certbot --nginx -d new-env.example.com --non-interactive --agree-tos -m support@example.com". This will create ssl certificate, renewal cronjob and install it in nginx.
 
 3. [Prepare shell to run terraform locally](#prepare-shell-to-run-terraform-locally).
 
